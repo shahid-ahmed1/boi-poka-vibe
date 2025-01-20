@@ -1,10 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const links =<>
-    <li><a>Home</a></li>
-    <li><a>Dashboard</a></li></>
+    <li><NavLink to='/'>Home</NavLink></li>
+    <li><NavLink to='/dashboard'>Deshboard</NavLink></li></>
     return (
+        <>
         <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -41,6 +43,8 @@ const Navbar = () => {
           <a className="btn">Button</a>
         </div>
       </div>
+      
+      </>
     );
 };
 
