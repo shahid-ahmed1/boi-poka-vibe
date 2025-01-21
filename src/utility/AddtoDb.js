@@ -46,4 +46,4 @@ const addToStoredWishedList =(id)=>{
     }
 }
 
-export {addToStoredReadList ,addToStoredWishedList}
+export {addToStoredReadList ,addToStoredWishedList,getStoreReadList,getStoreWishedList}
